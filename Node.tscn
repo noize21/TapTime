@@ -1,0 +1,154 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Node.gd" type="Script" id=1]
+[ext_resource path="res://white.png" type="Texture" id=2]
+[ext_resource path="res://TextureButton.gd" type="Script" id=3]
+[ext_resource path="res://detonate.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://StoreScore.gd" type="Script" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 60
+extra_spacing_char = 6
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFontData" id=2]
+font_path = "res://detonate.ttf"
+
+[sub_resource type="DynamicFont" id=3]
+size = 90
+font_data = SubResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 45
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 50
+font_data = ExtResource( 4 )
+
+[node name="Node" type="Node"]
+script = ExtResource( 1 )
+
+[node name="TextureButton1" type="TextureButton" parent="."]
+margin_left = 45.0
+margin_top = 400.0
+margin_right = 345.0
+margin_bottom = 700.0
+texture_normal = ExtResource( 2 )
+expand = true
+script = ExtResource( 3 )
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+margin_left = 390.0
+margin_top = 400.0
+margin_right = 690.0
+margin_bottom = 700.0
+texture_normal = ExtResource( 2 )
+expand = true
+script = ExtResource( 3 )
+
+[node name="TextureButton3" type="TextureButton" parent="."]
+margin_left = 735.0
+margin_top = 400.0
+margin_right = 1035.0
+margin_bottom = 700.0
+texture_normal = ExtResource( 2 )
+expand = true
+script = ExtResource( 3 )
+
+[node name="TextureButton4" type="TextureButton" parent="."]
+margin_left = 45.72
+margin_top = 745.0
+margin_right = 345.72
+margin_bottom = 1045.0
+texture_normal = ExtResource( 2 )
+expand = true
+script = ExtResource( 3 )
+
+[node name="TextureButton5" type="TextureButton" parent="."]
+margin_left = 390.0
+margin_top = 745.0
+margin_right = 690.0
+margin_bottom = 1045.0
+texture_normal = ExtResource( 2 )
+expand = true
+script = ExtResource( 3 )
+
+[node name="TextureButton6" type="TextureButton" parent="."]
+margin_left = 735.0
+margin_top = 745.0
+margin_right = 1035.0
+margin_bottom = 1045.0
+texture_normal = ExtResource( 2 )
+expand = true
+script = ExtResource( 3 )
+
+[node name="TextureButton7" type="TextureButton" parent="."]
+margin_left = 45.26
+margin_top = 1090.0
+margin_right = 345.26
+margin_bottom = 1390.0
+texture_normal = ExtResource( 2 )
+expand = true
+script = ExtResource( 3 )
+
+[node name="TextureButton8" type="TextureButton" parent="."]
+margin_left = 390.0
+margin_top = 1090.0
+margin_right = 690.0
+margin_bottom = 1390.0
+texture_normal = ExtResource( 2 )
+expand = true
+script = ExtResource( 3 )
+
+[node name="TextureButton9" type="TextureButton" parent="."]
+margin_left = 735.0
+margin_top = 1090.0
+margin_right = 1035.0
+margin_bottom = 1390.0
+texture_normal = ExtResource( 2 )
+expand = true
+script = ExtResource( 3 )
+
+[node name="ResetButton" type="Button" parent="."]
+margin_left = 222.579
+margin_top = 1597.18
+margin_right = 822.579
+margin_bottom = 1797.18
+custom_fonts/font = SubResource( 1 )
+text = "Restart"
+
+[node name="TimeLabel" type="Label" parent="."]
+margin_left = 340.0
+margin_top = 160.0
+margin_right = 740.0
+margin_bottom = 360.0
+custom_fonts/font = SubResource( 3 )
+text = "Test
+"
+align = 1
+valign = 1
+
+[node name="InstructionsLabel" type="Label" parent="."]
+anchor_right = 1.0
+margin_top = 1450.0
+margin_right = -2.0
+margin_bottom = 1497.0
+rect_pivot_offset = Vector2( 151.959, 11 )
+custom_fonts/font = SubResource( 4 )
+text = "Tap these 9 tiles ASAP! black=current grey=next"
+align = 1
+valign = 1
+
+[node name="HighscoreLabel" type="Label" parent="."]
+margin_left = 19.0
+margin_top = 255.0
+margin_right = 447.0
+margin_bottom = 302.0
+rect_rotation = -33.4743
+custom_fonts/font = SubResource( 5 )
+text = "Highscore"
+
+[node name="StoreScore" type="Node" parent="."]
+script = ExtResource( 5 )
+
