@@ -3,6 +3,8 @@
 .import/
 export.cfg
 export_presets.cfg
+/export
+dreamlo.txt
 
 # Mono-specific ignores
 .mono/
