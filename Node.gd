@@ -96,7 +96,7 @@ func _reset():
 	current_index=0
 	_first_step()
 	game_running = false
-	get_node("TimeLabel").text = "0.00s"
+	get_node("TimeLabel").text = "0,00s"
 	get_node("TimeLabel").set("custom_colors/font_color", Color(1,1,1))
 
 func _process(delta):
@@ -110,6 +110,5 @@ func _process(delta):
 	
 func _formatScore(var inputscore):
 	if (inputscore == 0):
-		return "???"
-	#expecting at least 1000ms time
-	return str(int(inputscore / 1000)) + "," + str((inputscore % 1000)/10) + "s"
+		return "0,00s"
+	return str(int(inputscore / 1000)) + "," + str((inputscore % 1000)/10).pad_zeros(2) + "s"

@@ -119,14 +119,14 @@ custom_fonts/font = SubResource( 1 )
 text = "Restart"
 
 [node name="TimeLabel" type="Label" parent="."]
-margin_left = 340.0
+margin_left = 440.0
 margin_top = 160.0
-margin_right = 740.0
+margin_right = 840.0
 margin_bottom = 360.0
 custom_fonts/font = SubResource( 3 )
 text = "Test
 "
-align = 1
+align = 3
 valign = 1
 
 [node name="InstructionsLabel" type="Label" parent="."]
